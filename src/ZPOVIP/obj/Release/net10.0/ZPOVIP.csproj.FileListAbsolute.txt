@@ -1,0 +1,11 @@
+/home/runner/work/ZombiePlagueOutstandingCS2-VIP/ZombiePlagueOutstandingCS2-VIP/src/ZPOVIP/obj/Release/net10.0/ZPOVIP.csproj.AssemblyReference.cache
+/home/runner/work/ZombiePlagueOutstandingCS2-VIP/ZombiePlagueOutstandingCS2-VIP/src/ZPOVIP/obj/Release/net10.0/ZPOVIP.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/work/ZombiePlagueOutstandingCS2-VIP/ZombiePlagueOutstandingCS2-VIP/src/ZPOVIP/obj/Release/net10.0/ZPOVIP.csproj.CoreCompileInputs.cache
+/home/runner/work/ZombiePlagueOutstandingCS2-VIP/ZombiePlagueOutstandingCS2-VIP/src/ZPOVIP/obj/Release/net10.0/ZPOVIP.sourcelink.json
+/home/runner/work/ZombiePlagueOutstandingCS2-VIP/ZombiePlagueOutstandingCS2-VIP/src/ZPOVIP/bin/Release/net10.0/ZPOVIP.deps.json
+/home/runner/work/ZombiePlagueOutstandingCS2-VIP/ZombiePlagueOutstandingCS2-VIP/src/ZPOVIP/bin/Release/net10.0/ZPOVIP.dll
+/home/runner/work/ZombiePlagueOutstandingCS2-VIP/ZombiePlagueOutstandingCS2-VIP/src/ZPOVIP/bin/Release/net10.0/ZPOVIP.pdb
+/home/runner/work/ZombiePlagueOutstandingCS2-VIP/ZombiePlagueOutstandingCS2-VIP/src/ZPOVIP/obj/Release/net10.0/ZPOVIP.dll
+/home/runner/work/ZombiePlagueOutstandingCS2-VIP/ZombiePlagueOutstandingCS2-VIP/src/ZPOVIP/obj/Release/net10.0/refint/ZPOVIP.dll
+/home/runner/work/ZombiePlagueOutstandingCS2-VIP/ZombiePlagueOutstandingCS2-VIP/src/ZPOVIP/obj/Release/net10.0/ZPOVIP.pdb
+/home/runner/work/ZombiePlagueOutstandingCS2-VIP/ZombiePlagueOutstandingCS2-VIP/src/ZPOVIP/obj/Release/net10.0/ref/ZPOVIP.dll
