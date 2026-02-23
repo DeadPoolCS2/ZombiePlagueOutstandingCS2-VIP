@@ -1,0 +1,20 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║               ZombiePlagueOutstandingCS2 – VIP Plugin                      ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Welcome to the VIP experience for Zombie Plague Outstanding CS2!
+As a VIP you enjoy the following exclusive perks (human side only):
+
+• Guaranteed armor on spawn
+• Extra mid-air jump(s) – double/triple-jump
+• No fall damage
+• Increased damage dealt to zombies
+• Ammo Pack bonus every 500 damage dealt to zombies
+• Ammo Pack reward for every zombie kill
+• Happy Hour: bonus AP and frags during configured time window
+
+Type !vips to see which VIPs are currently online.
+
+═══════════════════════════════════════════════════════════════════════════════
+For support or more information visit the server Discord / forum.
+═══════════════════════════════════════════════════════════════════════════════

@@ -1,0 +1,123 @@
+{
+  /*
+   * ZombiePlagueOutstandingCS2-VIP – configuration file
+   * Path: csgo/addons/swiftly/configs/ZPOVIP.jsonc
+   *
+   * Hot-reload supported: save this file while the server is running and
+   * the plugin will pick up changes automatically.
+   *
+   * All perk toggles correspond to HZP VIP cvar equivalents from zm_vip.sma.
+   */
+
+  "ZPOVIP": {
+
+    // ─── VIP Detection ────────────────────────────────────────────────────────
+    // Comma-separated Swiftly permission flags that grant VIP status.
+    // A player needs to match ANY of the listed flags to be considered VIP.
+    // Leave empty ("") to treat every player as VIP (testing only).
+    "VIPPermission": "@zpovip/vip",
+
+    // ─── Commands ─────────────────────────────────────────────────────────────
+    // Chat commands (without leading ! or /).
+    // Players type e.g. !vip or /vip to open the VIP benefits menu.
+    "VipMenuCommand": "vip",
+    "VipsListCommand": "vips",
+
+    // ─── VIP Benefits Menu ────────────────────────────────────────────────────
+    // Title shown at the top of the !vip benefits menu.
+    "VipMenuTitle": "VIP Benefits",
+
+    // Lines displayed in the !vip benefits menu as non-selectable display items.
+    // Fully customisable – write any text you like here.
+    // Supports SwiftlyS2 HTML colour tags (e.g. <font color='#FFD700'>text</font>).
+    // Set to an EMPTY list ([]) to auto-generate lines from the active perk settings below.
+    "BenefitLines": [
+      "★ Armor on spawn (+100)",
+      "★ Double Jump (1 extra mid-air jump)",
+      "★ No Fall Damage",
+      "★ x1.5 Damage dealt to Zombies",
+      "★ +1 AP per 500 damage dealt to Zombies",
+      "★ +2 AP per Zombie Kill",
+      "★ Happy Hour: extra AP & frags (19:00-08:00)"
+    ],
+
+    // ─── Announce ─────────────────────────────────────────────────────────────
+    // Broadcast a chat message when a VIP spawns for the first time in a round.
+    "JoinAnnounceEnabled": true,
+
+    // Prefix prepended to all plugin chat messages.
+    "ChatPrefix": "[VIP]",
+
+    // ─── Armor on spawn ───────────────────────────────────────────────────────
+    // Minimum armor value guaranteed to a VIP human each spawn.
+    // Players who already have more armor are unaffected. Set to 0 to disable.
+    // AMXX equivalent: zp_vip_armor
+    "ArmorAmount": 100,
+
+    // ─── Multi-jump ───────────────────────────────────────────────────────────
+    // Number of extra mid-air jumps available to VIP humans.
+    //   1 = double-jump, 2 = triple-jump ...
+    // Set to 0 to disable.
+    // AMXX equivalent: zp_vip_extrajumps
+    "ExtraJumps": 1,
+
+    // Upward velocity applied per extra jump (units/s). Tweak for feel.
+    "JumpVelocity": 300.0,
+
+    // ─── No fall damage ───────────────────────────────────────────────────────
+    // When true, VIP humans take zero fall / environment damage.
+    // AMXX equivalent: zp_vip_falldamage (1 = no fall damage)
+    "NoFallDamage": true,
+
+    // ─── Damage multiplier ────────────────────────────────────────────────────
+    // Multiplier applied to damage dealt by VIP humans to zombies.
+    //   1.0 = no bonus, 1.5 = 50 % bonus damage, 2.0 = double damage ...
+    // AMXX equivalent: zp_vip_damage
+    "DamageMultiplier": 1.5,
+
+    // When true, the multiplier is NOT applied to HE grenade explosions.
+    "ExcludeHEGrenade": true,
+
+    // ─── Damage reward (AP per threshold) ────────────────────────────────────
+    // Every <DamageRewardThreshold> HP of damage a VIP human deals to zombies
+    // earns <DamageRewardAmount> ammo packs.
+    // Set DamageRewardThreshold to 0 to disable.
+    // AMXX equivalent: zp_vip_dmgreward_threshold / zp_vip_dmgreward_ap
+    "DamageRewardThreshold": 500,
+    "DamageRewardAmount": 1,
+
+    // ─── Kill reward ──────────────────────────────────────────────────────────
+    // Ammo packs awarded to a VIP human each time they kill a zombie.
+    // Set to 0 to disable.
+    // AMXX equivalent: zp_vip_killammo
+    "KillRewardAmount": 2,
+
+    // Whether to add the Happy Hour AP bonus on top of the base kill reward.
+    "KillRewardHappyHourBonus": true,
+
+    // ─── Happy Hour ───────────────────────────────────────────────────────────
+    // During Happy Hour, VIP humans earn bonus AP and frags per zombie kill.
+    // AMXX equivalent: zp_vip_happyhour_*
+    "HappyHourEnabled": true,
+
+    // Start hour in 24-h format (0-23). Set Start > End to wrap overnight.
+    // Example: Start=19, End=8 means happy hour from 19:00 to 07:59 the next day.
+    "HappyHourStart": 19,
+    "HappyHourEnd": 8,
+
+    // Extra ammo packs awarded per zombie kill during Happy Hour.
+    "HappyHourBonusAP": 2,
+
+    // Extra score/frags awarded per zombie kill during Happy Hour.
+    "HappyHourBonusFrags": 1,
+
+    // ─── Infect reward ────────────────────────────────────────────────────────
+    // When enabled, a VIP player who infects a human (while playing as zombie)
+    // earns AP and/or a health bonus. DISABLED by default.
+    // Requires the HZP API to be present (plugin subscribes to HZP_OnPlayerInfect).
+    // AMXX equivalent: zp_vip_infectammo / zp_vip_infecthealth
+    "InfectRewardsEnabled": false,
+    "InfectRewardAP": 1,
+    "InfectRewardHealth": 500
+  }
+}
